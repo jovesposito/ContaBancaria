@@ -90,8 +90,10 @@ public class Menu {
 				sc.skip("\\R");
 				titular = sc.nextLine();
 				
-				System.out.println("Digite o tipo da Conta (1 - CC ou 2 - CP): ");
-				tipo = sc.nextInt();
+				do {
+					System.out.println("Digite o tipo da Conta (1 - CC ou 2 - CP): ");
+					tipo = sc.nextInt();
+				} while (tipo < 1 || tipo > 2);
 				
 				System.out.println("Digite o Saldo da conta: ");
 				saldo = sc.nextFloat();
