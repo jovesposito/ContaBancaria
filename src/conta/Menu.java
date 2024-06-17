@@ -30,11 +30,11 @@ public class Menu {
 		ContaCorrente cc2 = new ContaCorrente(contas.gerarNumero(), 124, 1, "Maria da Silva", 2000f, 100.0f);
 		contas.cadastrar(cc2);
 		
-		ContaCorrente cc3 = new ContaCorrente(contas.gerarNumero(), 125, 2, "Mariana Rios", 4000f, 12);
-		contas.cadastrar(cc3);
+		ContaPoupanca cp1 = new ContaPoupanca(contas.gerarNumero(), 125, 2, "Mariana Rios", 4000f, 12);
+		contas.cadastrar(cp1);
 		
-		ContaCorrente cc4 = new ContaCorrente(contas.gerarNumero(), 126, 2, "Juliana Paes", 8000f, 15);
-		contas.cadastrar(cc4);
+		ContaPoupanca cp2 = new ContaPoupanca(contas.gerarNumero(), 126, 2, "Juliana Paes", 8000f, 15);
+		contas.cadastrar(cp2);
 		
 		contas.listarTodas();
 		
